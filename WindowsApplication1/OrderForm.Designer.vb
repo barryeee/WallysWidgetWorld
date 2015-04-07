@@ -25,13 +25,14 @@ Partial Class OrderForm
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblSubTitle = New System.Windows.Forms.Label()
         Me.grpOrientation = New System.Windows.Forms.GroupBox()
-        Me.btnLeftHand = New System.Windows.Forms.RadioButton()
-        Me.btnRightHand = New System.Windows.Forms.RadioButton()
         Me.btnEitherHand = New System.Windows.Forms.RadioButton()
+        Me.btnRightHand = New System.Windows.Forms.RadioButton()
+        Me.btnLeftHand = New System.Windows.Forms.RadioButton()
         Me.cmbColor = New System.Windows.Forms.ComboBox()
         Me.lblColor = New System.Windows.Forms.Label()
         Me.numQty = New System.Windows.Forms.NumericUpDown()
         Me.lblQty = New System.Windows.Forms.Label()
+        Me.lblUnitPrice = New System.Windows.Forms.Label()
         Me.grpOrientation.SuspendLayout()
         CType(Me.numQty, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -72,16 +73,16 @@ Partial Class OrderForm
         Me.grpOrientation.TabStop = False
         Me.grpOrientation.Text = "Orientation"
         '
-        'btnLeftHand
+        'btnEitherHand
         '
-        Me.btnLeftHand.AutoSize = True
-        Me.btnLeftHand.Location = New System.Drawing.Point(6, 36)
-        Me.btnLeftHand.Name = "btnLeftHand"
-        Me.btnLeftHand.Size = New System.Drawing.Size(84, 17)
-        Me.btnLeftHand.TabIndex = 0
-        Me.btnLeftHand.TabStop = True
-        Me.btnLeftHand.Text = "Left Handed"
-        Me.btnLeftHand.UseVisualStyleBackColor = True
+        Me.btnEitherHand.AutoSize = True
+        Me.btnEitherHand.Location = New System.Drawing.Point(6, 125)
+        Me.btnEitherHand.Name = "btnEitherHand"
+        Me.btnEitherHand.Size = New System.Drawing.Size(94, 17)
+        Me.btnEitherHand.TabIndex = 2
+        Me.btnEitherHand.TabStop = True
+        Me.btnEitherHand.Text = "Ambidexterous"
+        Me.btnEitherHand.UseVisualStyleBackColor = True
         '
         'btnRightHand
         '
@@ -94,16 +95,16 @@ Partial Class OrderForm
         Me.btnRightHand.Text = "Right Handed"
         Me.btnRightHand.UseVisualStyleBackColor = True
         '
-        'btnEitherHand
+        'btnLeftHand
         '
-        Me.btnEitherHand.AutoSize = True
-        Me.btnEitherHand.Location = New System.Drawing.Point(6, 125)
-        Me.btnEitherHand.Name = "btnEitherHand"
-        Me.btnEitherHand.Size = New System.Drawing.Size(94, 17)
-        Me.btnEitherHand.TabIndex = 2
-        Me.btnEitherHand.TabStop = True
-        Me.btnEitherHand.Text = "Ambidexterous"
-        Me.btnEitherHand.UseVisualStyleBackColor = True
+        Me.btnLeftHand.AutoSize = True
+        Me.btnLeftHand.Location = New System.Drawing.Point(6, 36)
+        Me.btnLeftHand.Name = "btnLeftHand"
+        Me.btnLeftHand.Size = New System.Drawing.Size(84, 17)
+        Me.btnLeftHand.TabIndex = 0
+        Me.btnLeftHand.TabStop = True
+        Me.btnLeftHand.Text = "Left Handed"
+        Me.btnLeftHand.UseVisualStyleBackColor = True
         '
         'cmbColor
         '
@@ -142,12 +143,22 @@ Partial Class OrderForm
         Me.lblQty.TabIndex = 6
         Me.lblQty.Text = "Quantity"
         '
+        'lblUnitPrice
+        '
+        Me.lblUnitPrice.AutoSize = True
+        Me.lblUnitPrice.Location = New System.Drawing.Point(425, 187)
+        Me.lblUnitPrice.Name = "lblUnitPrice"
+        Me.lblUnitPrice.Size = New System.Drawing.Size(53, 13)
+        Me.lblUnitPrice.TabIndex = 7
+        Me.lblUnitPrice.Text = "Unit Price"
+        '
         'OrderForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Beige
         Me.ClientSize = New System.Drawing.Size(635, 461)
+        Me.Controls.Add(Me.lblUnitPrice)
         Me.Controls.Add(Me.lblQty)
         Me.Controls.Add(Me.numQty)
         Me.Controls.Add(Me.lblColor)
@@ -174,5 +185,6 @@ Partial Class OrderForm
     Friend WithEvents lblColor As System.Windows.Forms.Label
     Friend WithEvents numQty As System.Windows.Forms.NumericUpDown
     Friend WithEvents lblQty As System.Windows.Forms.Label
+    Friend WithEvents lblUnitPrice As System.Windows.Forms.Label
 
 End Class
