@@ -33,6 +33,7 @@ Partial Class OrderForm
         Me.numQty = New System.Windows.Forms.NumericUpDown()
         Me.lblQty = New System.Windows.Forms.Label()
         Me.lblUnitPrice = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.grpOrientation.SuspendLayout()
         CType(Me.numQty, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -152,12 +153,20 @@ Partial Class OrderForm
         Me.lblUnitPrice.TabIndex = 7
         Me.lblUnitPrice.Text = "Unit Price"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(420, 219)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(69, 20)
+        Me.TextBox1.TabIndex = 8
+        '
         'OrderForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Beige
-        Me.ClientSize = New System.Drawing.Size(635, 461)
+        Me.ClientSize = New System.Drawing.Size(635, 479)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblUnitPrice)
         Me.Controls.Add(Me.lblQty)
         Me.Controls.Add(Me.numQty)
@@ -186,5 +195,6 @@ Partial Class OrderForm
     Friend WithEvents numQty As System.Windows.Forms.NumericUpDown
     Friend WithEvents lblQty As System.Windows.Forms.Label
     Friend WithEvents lblUnitPrice As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 
 End Class
