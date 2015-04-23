@@ -8,3 +8,7 @@ H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\
 H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\obj\Debug\WindowsApplication1.exe
 H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\obj\Debug\WindowsApplication1.xml
 H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\bin\Debug\WindowsApplication1.exe.manifest
+H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\bin\Debug\WindowsApplication1.application
+H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\obj\Debug\WindowsApplication1.exe.manifest
+H:\Classes\Intro Prog Logic\Final Project\WallysWidgetWorld\WindowsApplication1\obj\Debug\WindowsApplication1.application
