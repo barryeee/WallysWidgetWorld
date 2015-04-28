@@ -1,4 +1,5 @@
 ﻿Public Class OrderForm
+    Public OrderTotal As Decimal
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblTitle.Click
 
